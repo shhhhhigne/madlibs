@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Madlib</title>
+  </head>
+  <body>
+    There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab. When {{ person }} went to pick it up, it burst into flames in a totally 
+    {% for adj in adjective[:-1] %} 
+      {{ adj }}, 
+    {% endfor %}
+    {{ adjective[-1] }}
+    way.
+  </body>
+</html>

@@ -1,0 +1,9 @@
+body {
+    font-family: Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.dropdown {
+    border-radius: 10px;
+    border:1px solid #AAAAAA;
+}
