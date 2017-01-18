@@ -55,6 +55,7 @@ def show_madlib_form():
                            adjectives=adjectives)
 
 
+
 @app.route('/madlib', methods=['POST', 'GET'])
 def show_madlib():
     """Show filled in madlibs to user"""

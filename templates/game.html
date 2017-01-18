@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends 'base.html' %}
 {% block title %}Game{% endblock %}
 
@@ -28,3 +29,38 @@
     <input type="submit">
   </form>
 {% endblock %}
+=======
+<!doctype html>
+<html>
+  <head>
+    <title>Game</title>
+    <link rel='stylesheet' href='../static/madlibs.css'
+  </head>
+  <body>
+    <form action="/madlib">
+      person: <input type="text" name="person" placeholder="Ballonicorn">
+      <br>
+      <br>
+      color: 
+        <select name="color" class="dropdown">
+          {% for color in colors %}
+           <option value={{ color }}>{{ color }}</option>
+          {% endfor %}
+        </select>
+        <br>
+        <br>
+      noun: <input type="text" name="noun" placeholder="computer">
+      <br>
+      <br>
+      adjective:
+          {% for adj in adjectives %}
+            <input type="checkbox" name="adj" value={{ adj }}> {{ adj }}
+          {% endfor %}
+      
+      <br>
+      <br>
+      <input type="submit">
+    </form>
+  </body>
+</html>
+>>>>>>> ff191e5a9fed440c86c89d1a520436582e856566

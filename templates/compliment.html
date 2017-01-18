@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {% extends 'base.html' %}
 {% block title %}A Compliment{% endblock %}
 
@@ -10,3 +11,22 @@
       <input type="submit">
   </form>
 {% endblock %}
+=======
+<!doctype html>
+<html>
+<head>
+  <title>A Compliment</title>
+  <link rel='stylesheet' href='../static/madlibs.css'>
+</head>
+<body>
+    Hi {{ person }}! 
+    <br>
+    <form action="/game">
+        Would you like to play a game?
+        <input type="radio" name="yesno" value="yes">Yes
+        <input type="radio" name="yesno" value="no">No
+        <input type="submit">
+    </form>
+</body>
+</html>
+>>>>>>> ff191e5a9fed440c86c89d1a520436582e856566

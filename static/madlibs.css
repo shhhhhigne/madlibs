@@ -6,6 +6,7 @@ body {
 .dropdown {
     border-radius: 10px;
     border:1px solid #AAAAAA;
+<<<<<<< HEAD
 }
 
 #blue {
@@ -23,4 +24,6 @@ body {
 
 #yellow {
     color: yellow;
+=======
+>>>>>>> ff191e5a9fed440c86c89d1a520436582e856566
 }
