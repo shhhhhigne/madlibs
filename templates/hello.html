@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %} Hi There! {% endblock %}
+
+{% block header %} Hi There! {% endblock %}
+{% block body %}
+  <form action="/greet">
+    What's your name? <input type="text" name="person">
+    <input type="submit">
+  </form>
+{% endblock %}

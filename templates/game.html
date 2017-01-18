@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}Game{% endblock %}
+
+{% block header %}Please fill these in!{% endblock %}
+{% block body %}
+  <form action="/madlib" method="POST">
+    person: <input type="text" name="person" placeholder="Ballonicorn">
+    <br>
+    <br>
+    color: 
+      <select name="color" class="dropdown">
+        {% for color in colors %}
+          <option id='{{ color }}' value={{ color }}>{{ color }}</option>
+        {% endfor %}
+      </select>
+      <br>
+      <br>
+    noun: <input type="text" name="noun" placeholder="computer">
+    <br>
+    <br>
+    adjective:
+        {% for adj in adjectives %}
+          <input type="checkbox" name="adj" value={{ adj }}> {{ adj }}
+        {% endfor %}
+    
+    <br>
+    <br>
+    <input type="submit">
+  </form>
+{% endblock %}

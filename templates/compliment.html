@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}A Compliment{% endblock %}
+
+{% block header %}Hi {{ person }}! {% endblock %}
+{% block body %}
+  <form action="/game">
+      Would you like to play a game?
+      <input type="radio" name="yesno" value="yes">Yes
+      <input type="radio" name="yesno" value="no">No
+      <input type="submit">
+  </form>
+{% endblock %}
